@@ -45,7 +45,7 @@ async function main() {
         })
     }
     webhookClient.send({
-        content: `Total de usuários removidos: ${+ resultUser.length}`
+        content: `Total de usuários removidos: ${resultUser.length}`
     })
     webhookClient.send({
         content: 'Processo de remoção de usuários suspensos finalizado!'
