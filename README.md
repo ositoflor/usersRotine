@@ -6,3 +6,4 @@ Para utilizar a rotina é necessario ter o GAM instalado, link do GAM para insta
 
 https://github.com/GAM-team/GAM/wiki
 
+Utilizar npm install para intalar as dependências.
