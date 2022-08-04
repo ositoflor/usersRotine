@@ -41,11 +41,11 @@ async function main() {
     for (let i = 0; i < resultUser.length; i++) {
         shell.exec(`gam delete user ${resultUser[i]}`)
         webhookClient.send({
-            content: 'Usuário ' + resultUser[i] + ' removido com sucesso!'
+            content: `Usuário ${resultUser[i]} removido com sucesso!`
         })
     }
     webhookClient.send({
-        content: 'Total de usuários removidos: ' + resultUser.length
+        content: `Total de usuários removidos: ${+ resultUser.length}`
     })
     webhookClient.send({
         content: 'Processo de remoção de usuários suspensos finalizado!'
